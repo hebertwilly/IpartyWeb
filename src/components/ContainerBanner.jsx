@@ -5,7 +5,7 @@ const ContainerBanner = ({ backgroundImage, children }) => {
       backgroundImage: `url(${backgroundImage})`,
     };
     return (
-      <div className="h-[600px] w-[100%] bg-cover bg-center" style={containerStyle}>
+      <div className="h-[570px] w-[100%] bg-cover bg-center" style={containerStyle}>
         {children}
       </div>
     );

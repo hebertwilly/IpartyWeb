@@ -8,10 +8,10 @@ const HeaderHomePage = () =>{
             <header className="w-[1296px] 
                         h-[66px]
                         bg-[#282828]
-                        backdrop-blur-[75px]
-                        rounded-[20px] 
+                        rounded-[20px]
+                        bg-opacity-50
                         mt-[20px]
-                        opacity-[75%]
+                        backdrop-blur-sm
                         flex 
                         justify-between 
                         items-center 
@@ -26,12 +26,12 @@ const HeaderHomePage = () =>{
                     </ul>
                 </nav>
                 <nav className="h-[66px]
-                                w-[275px]
-                                bg-gradient-to-r 
-                              from-[#282828]
-                              to-[#C39F20]
-                                rounded-[20px] 
-                                opacity-[80%]
+                                w-[270px]
+                                bg-gradient-to-r
+                                from-[rgba(40,40,40,0)]
+                                to-[rgba(195,160,32,0.66)]
+                                rounded-[20px]
+                                
                                 flex 
                                 items-center
                                 pr-[35px] 
