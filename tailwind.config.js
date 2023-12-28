@@ -9,6 +9,9 @@ export default {
       colors: {
         'black-principal': '#090808',
       },
+      backgroundImage: {
+        'banner-backgroud': "url('./src/assets/backgroundBanner.png')"
+      }
     }
   },
   plugins: [],
