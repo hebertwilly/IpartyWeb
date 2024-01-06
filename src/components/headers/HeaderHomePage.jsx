@@ -1,6 +1,6 @@
 import React from "react";
-import logoIparty from '../assets/IpartyLogo.svg'
-import '../App.css';
+import logoIparty from '../../assets/IpartyLogo.svg'
+
 
 const HeaderHomePage = () =>{
     return (
