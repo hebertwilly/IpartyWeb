@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'black-principal': '#090808',
+        'black-principal': '#0B0A0A',
       },
       backgroundImage: {
         'banner-backgroud': "url('./src/assets/backgroundBanner.png')"

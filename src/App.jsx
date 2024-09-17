@@ -1,10 +1,10 @@
 import React from "react";
-import HomePage from "./pages/HomePage";
+import LandingPage from "./pages/LandingPage.jsx";
 import "./App.css";
 
 const App = () => {
   return(
-    <HomePage/>
+    <LandingPage/>
   );
 }
 
