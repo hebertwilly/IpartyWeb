@@ -19,8 +19,8 @@ const Card = ({cardData}) => {
     };
 
     return (
-        <div className="w-[330px] 
-                        h-[330px] 
+        <div className="w-[310px] 
+                        h-[310px] 
                         bg-black-principal 
                         rounded-[15px] 
                         p-4 
@@ -31,7 +31,7 @@ const Card = ({cardData}) => {
                 {renderIcon(cardData.icon)}
                 <h1 className="text-[#C39F20] text-[25px] ml-[5px] font-bold">{cardData.title}</h1>
             </div>
-            <div className="text-white text-center text-[20px] mt-[20px]">
+            <div className="text-white text-center text-[18px] mt-[20px]">
                     {cardData.description}
             </div>
         </div>
