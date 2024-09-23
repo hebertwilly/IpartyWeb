@@ -19,6 +19,8 @@ import {cardData1, cardData2, cardData3, cardData4} from "../data/cardData";
 import Header from "../components/headers/Header";
 import SloganBanner from "../components/utils/SloganBanner";
 import Card from "../components/cards/Card";
+
+import BackgroundTaca from "../assets/BackGround-taca.png"
 import Background1 from "../assets/Backgroud1.png";
 
 const LandingPage = () =>{
@@ -66,21 +68,27 @@ const LandingPage = () =>{
                     <Card cardData={cardData3}/>
                     <Card cardData={cardData4}/>
                 </div>
-                <div className="w-[100%] mt-[55px] flex flex-row justify-between items-center text-center">
+                <div className="w-[100%] mt-[80px] flex flex-row justify-between items-center text-center">
                     <h1 className="ml-[116px] text-[35px] font-bold gradient-text">ALGUNS EXEMPLOS DO QUE VOCÊ ENCONTRA NA I PARTY</h1>
                     <button className="w-[200px] h-[45px] mr-[116px] border-2 border-[#C39F20] rounded-[25px] text-[#C39F20] font-bold hover:bg-[#C39F20] hover:text-black transition-colors duration-500 ease-in-out">Criar conta</button>
                 </div>
-                <div className="flex flex-row w-[87%] mb-[100px] justify-between items-center text-center">
+                <div className="flex flex-row w-[87%] mb-[80px] justify-between items-center text-center">
                     {items.map((item, index) => (
                         <div
                             key={index}
-                            className="mt-[30px] flex flex-col gap-y-2 items-center"
-                            style={{ transform: `scale(${currentIndex === index ? 1.1 : 1})`, transition: "transform 0.5s ease-in-out" }}
+                            className="mt-[50px] flex flex-col gap-y-2 items-center"
+                            style={{ transform: `scale(${currentIndex === index ? 1.2 : 1})`, transition: "transform 0.5s ease-in-out" }}
                         >
                             {item.icon}
                             <span className="text-lg text-white font-bold text-center">{item.label}</span>
                         </div>
                     ))}
+                </div>
+                <div className="bg-cover bg-center w-full h-[500px] mb-[50px] flex flex-col justify-center" style={{backgroundImage: `url(${BackgroundTaca})`}}>
+                    <button className="w-[150px] h-[45px] ml-[116px] text-[18px] border-[3px] text-center mb-[10px] border-[#C39F20] rounded-[25px] text-[#C39F20] font-bold hover:bg-[#C39F20] hover:text-black transition-colors duration-500 ease-in-out">Saiba mais</button>
+                    <h1 className="ml-[116px] text-[40px] font-bold gradient-text">I PARTY PARA EMPRESAS</h1>
+                    <h2 className="ml-[116px] text-[22px] font-bold gradient-text">Cadastre sua empresa e comece a vender através da I Party</h2>
+                    <p className="font-normal gradient-text ml-[116px] text-[18px] w-[700px] mt-[15px]">Transforme o modo de vender da sua empresa, conecte -se a novos e velhos clientes e descubra como é prático e lucrativo vender com I Party </p>
                 </div>
             </main>
         </div>

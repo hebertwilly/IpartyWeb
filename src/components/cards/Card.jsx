@@ -25,7 +25,8 @@ const Card = ({cardData}) => {
                         rounded-[15px] 
                         p-4 
                         m-2
-                        hover:scale-110
+                        hover:scale-125
+                        cursor-default
                         transition-all duration-500 ease-in-out">
             <div className="flex flex-row justify-center mt-[20px] items-center">
                 {renderIcon(cardData.icon)}
